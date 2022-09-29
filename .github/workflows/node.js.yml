@@ -10,7 +10,7 @@ on:
     branches: [ "main" ]
 
 env:
-  NODE_VERSION: '14.x'
+  NODE_VERSION: '16.x'
 
 jobs:
   build:
@@ -27,7 +27,7 @@ jobs:
     
     - name: Cache node modules
       id: cache-nodemodules
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       env:
         cache-name: cache-node-modules
       with:
